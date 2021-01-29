@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            DRAGON BLYAT! WARRIOR
+        </title>
+        <script>
+             
+            
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="fav.png" type="image/gif"> 
+    </head>
+    <body>
+        <audio autoplay loop id="playaudio" src="ussr.mp3">
+            
+        </audio>
+        <button id="btn" onclick="document.getElementById('playaudio').muted=!document.getElementById('playaudio').muted"></button>
+        <div class="heading"><h1 align="center"> PAPA STALIN <img src="stalin.png" height="50px" width="50px"><br>VS. <br>BLYAT CAPITALIST PIG <img src="newpig.png" height="50px" width="50px"></h1></div>
+        <br><h1 align="center">INSTRUCTIONS:<br>1.Click to make PAPA STALIN jump<br>2.Don't let the CAPITALIST PIG win<br>3.You're GTG</h1>
+        <div class="score">
+            <h2>SCORE:<b id="score">0</b></h2>
+        </div>
+        <div id="out" onclick="jump(), slide()">
+        <div id="game" onclick="show(); this.onclick=null">
+            <div id="character"></div>
+            <div id="block"></div>
+        </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
